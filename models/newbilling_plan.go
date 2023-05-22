@@ -21,7 +21,7 @@ type NewbillingPlan struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 方案描述
 	Description string `json:"description,omitempty"`
@@ -46,11 +46,11 @@ type NewbillingPlan struct {
 
 	// 状态更新时间
 	// Format: date-time
-	StatusTime strfmt.DateTime `json:"status_time,omitempty"`
+	StatusTime *strfmt.DateTime `json:"status_time,omitempty"`
 
 	// 更新ID
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling plan

@@ -28,14 +28,14 @@ type NewbillingPrdOrder struct {
 
 	// 支付时间
 	// Format: date-time
-	ChargeTime strfmt.DateTime `json:"charge_time,omitempty"`
+	ChargeTime *strfmt.DateTime `json:"charge_time,omitempty"`
 
 	// cost
 	Cost float32 `json:"cost,omitempty"`
 
 	// 主订单创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 自定义信息
 	ExtraInfo string `json:"extra_info,omitempty"`
@@ -69,7 +69,7 @@ type NewbillingPrdOrder struct {
 
 	// 主订单更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling prd order

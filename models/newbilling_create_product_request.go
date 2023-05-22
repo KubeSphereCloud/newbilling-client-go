@@ -30,11 +30,11 @@ type NewbillingCreateProductRequest struct {
 
 	// 产品生效时间
 	// Format: date-time
-	EffectiveTime strfmt.DateTime `json:"effective_time,omitempty"`
+	EffectiveTime *strfmt.DateTime `json:"effective_time,omitempty"`
 
 	// 产品失效时间
 	// Format: date-time
-	ExpirationTime strfmt.DateTime `json:"expiration_time,omitempty"`
+	ExpirationTime *strfmt.DateTime `json:"expiration_time,omitempty"`
 
 	// 产品名称  @gotags:valid:"Required;MaxSize(60)"
 	Name string `json:"name,omitempty"`

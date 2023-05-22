@@ -24,7 +24,7 @@ type NewbillingEvent struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// customer id
 	CustomerID string `json:"customer_id,omitempty"`
@@ -37,7 +37,7 @@ type NewbillingEvent struct {
 
 	// event time
 	// Format: date-time
-	EventTime strfmt.DateTime `json:"event_time,omitempty"`
+	EventTime *strfmt.DateTime `json:"event_time,omitempty"`
 
 	// prod id
 	ProdID string `json:"prod_id,omitempty"`
@@ -53,11 +53,11 @@ type NewbillingEvent struct {
 
 	// status time
 	// Format: date-time
-	StatusTime strfmt.DateTime `json:"status_time,omitempty"`
+	StatusTime *strfmt.DateTime `json:"status_time,omitempty"`
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling event

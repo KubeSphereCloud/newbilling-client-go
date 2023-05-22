@@ -24,7 +24,7 @@ type NewbillingStopProdInstanceRequest struct {
 
 	// 通知中的事件时间
 	// Format: date-time
-	EventTime strfmt.DateTime `json:"event_time,omitempty"`
+	EventTime *strfmt.DateTime `json:"event_time,omitempty"`
 
 	// not refund
 	NotRefund bool `json:"not_refund,omitempty"`

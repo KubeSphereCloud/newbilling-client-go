@@ -28,7 +28,7 @@ type NewbillingPushCollectDataEvent struct {
 
 	// 结束时间
 	// Format: date-time
-	EndTime strfmt.DateTime `json:"end_time,omitempty"`
+	EndTime *strfmt.DateTime `json:"end_time,omitempty"`
 
 	// 产品ID
 	ProdID string `json:"prod_id,omitempty"`
@@ -44,7 +44,7 @@ type NewbillingPushCollectDataEvent struct {
 
 	// 开始时间
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 }
 
 // Validate validates this newbilling push collect data event

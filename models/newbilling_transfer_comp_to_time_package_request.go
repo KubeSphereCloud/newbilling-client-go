@@ -30,7 +30,7 @@ type NewbillingTransferCompToTimePackageRequest struct {
 
 	// 通知中的事件时间
 	// Format: date-time
-	EventTime strfmt.DateTime `json:"event_time,omitempty"`
+	EventTime *strfmt.DateTime `json:"event_time,omitempty"`
 
 	// 外部产品实例ID
 	ProdInstIDExt string `json:"prod_inst_id_ext,omitempty"`

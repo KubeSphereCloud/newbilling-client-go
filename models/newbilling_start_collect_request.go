@@ -24,7 +24,7 @@ type NewbillingStartCollectRequest struct {
 
 	// 采集开始时间
 	// Format: date-time
-	CollectTime strfmt.DateTime `json:"collect_time,omitempty"`
+	CollectTime *strfmt.DateTime `json:"collect_time,omitempty"`
 
 	// 产品ID
 	ProdID string `json:"prod_id,omitempty"`

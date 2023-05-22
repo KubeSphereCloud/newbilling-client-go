@@ -21,7 +21,7 @@ type NewbillingChargePrdOrderRequest struct {
 
 	// 通知中的事件时间
 	// Format: date-time
-	EventTime strfmt.DateTime `json:"event_time,omitempty"`
+	EventTime *strfmt.DateTime `json:"event_time,omitempty"`
 
 	// 是否由pitrix-billing-order的订单触发
 	IsOrderResource bool `json:"is_order_resource,omitempty"`

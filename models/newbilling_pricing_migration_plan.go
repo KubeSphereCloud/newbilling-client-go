@@ -45,7 +45,7 @@ type NewbillingPricingMigrationPlan struct {
 
 	// status time
 	// Format: date-time
-	StatusTime strfmt.DateTime `json:"status_time,omitempty"`
+	StatusTime *strfmt.DateTime `json:"status_time,omitempty"`
 }
 
 // Validate validates this newbilling pricing migration plan

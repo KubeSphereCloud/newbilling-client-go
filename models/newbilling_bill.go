@@ -51,7 +51,7 @@ type NewbillingBill struct {
 
 	// 计费账单创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 描述信息
 	Description string `json:"description,omitempty"`
@@ -64,7 +64,7 @@ type NewbillingBill struct {
 
 	// 计费结束时间
 	// Format: date-time
-	EndTime strfmt.DateTime `json:"end_time,omitempty"`
+	EndTime *strfmt.DateTime `json:"end_time,omitempty"`
 
 	// 订单ID
 	OrderID string `json:"order_id,omitempty"`
@@ -95,7 +95,7 @@ type NewbillingBill struct {
 
 	// 计费开始时间
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// 状态
 	Status string `json:"status,omitempty"`
@@ -105,7 +105,7 @@ type NewbillingBill struct {
 
 	// 计费账单更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 
 	// 资源使用量
 	Usages string `json:"usages,omitempty"`

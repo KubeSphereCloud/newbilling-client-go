@@ -43,7 +43,7 @@ type NewbillingSubscriptionComponent struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// discount
 	Discount float32 `json:"discount,omitempty"`
@@ -53,7 +53,7 @@ type NewbillingSubscriptionComponent struct {
 
 	// expire time
 	// Format: date-time
-	ExpireTime strfmt.DateTime `json:"expire_time,omitempty"`
+	ExpireTime *strfmt.DateTime `json:"expire_time,omitempty"`
 
 	// is deleted
 	IsDeleted int32 `json:"is_deleted,omitempty"`
@@ -69,7 +69,7 @@ type NewbillingSubscriptionComponent struct {
 
 	// start time
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// status
 	Status int32 `json:"status,omitempty"`
@@ -85,7 +85,7 @@ type NewbillingSubscriptionComponent struct {
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling subscription component

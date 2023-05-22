@@ -27,7 +27,7 @@ type NewbillingProdInstance struct {
 
 	// 产品实例创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 是否自动续费
 	IsAutoRenew int32 `json:"is_auto_renew,omitempty"`
@@ -58,7 +58,7 @@ type NewbillingProdInstance struct {
 
 	// 产品实例更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling prod instance

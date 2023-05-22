@@ -30,7 +30,7 @@ type NewbillingOrder struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// currency
 	Currency string `json:"currency,omitempty"`
@@ -55,7 +55,7 @@ type NewbillingOrder struct {
 
 	// status time
 	// Format: date-time
-	StatusTime strfmt.DateTime `json:"status_time,omitempty"`
+	StatusTime *strfmt.DateTime `json:"status_time,omitempty"`
 
 	// subject
 	Subject string `json:"subject,omitempty"`
@@ -65,7 +65,7 @@ type NewbillingOrder struct {
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling order

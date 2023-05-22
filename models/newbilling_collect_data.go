@@ -36,11 +36,11 @@ type NewbillingCollectData struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 结束时间
 	// Format: date-time
-	EndTime strfmt.DateTime `json:"end_time,omitempty"`
+	EndTime *strfmt.DateTime `json:"end_time,omitempty"`
 
 	// 产品ID
 	ProdID string `json:"prod_id,omitempty"`
@@ -50,14 +50,14 @@ type NewbillingCollectData struct {
 
 	// 开始时间
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// 计量指标
 	Target string `json:"target,omitempty"`
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling collect data

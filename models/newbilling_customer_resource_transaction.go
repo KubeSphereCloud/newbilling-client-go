@@ -33,7 +33,7 @@ type NewbillingCustomerResourceTransaction struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// crt id
 	CrtID string `json:"crt_id,omitempty"`

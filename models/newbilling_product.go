@@ -27,18 +27,18 @@ type NewbillingProduct struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 产品描述
 	Description string `json:"description,omitempty"`
 
 	// 生效时间
 	// Format: date-time
-	EffectiveTime strfmt.DateTime `json:"effective_time,omitempty"`
+	EffectiveTime *strfmt.DateTime `json:"effective_time,omitempty"`
 
 	// 失效时间
 	// Format: date-time
-	ExpirationTime strfmt.DateTime `json:"expiration_time,omitempty"`
+	ExpirationTime *strfmt.DateTime `json:"expiration_time,omitempty"`
 
 	// 产品名称
 	Name string `json:"name,omitempty"`
@@ -54,7 +54,7 @@ type NewbillingProduct struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling product

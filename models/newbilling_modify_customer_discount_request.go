@@ -46,11 +46,11 @@ type NewbillingModifyCustomerDiscountRequest struct {
 
 	// 客户折扣生效时间
 	// Format: date-time
-	EffectiveTime strfmt.DateTime `json:"effective_time,omitempty"`
+	EffectiveTime *strfmt.DateTime `json:"effective_time,omitempty"`
 
 	// 客户折扣失效时间
 	// Format: date-time
-	ExpirationTime strfmt.DateTime `json:"expiration_time,omitempty"`
+	ExpirationTime *strfmt.DateTime `json:"expiration_time,omitempty"`
 
 	// 折扣需要满足的条件组
 	FiltersMapList []*NewbillingDiscountFilerMap `json:"filters_map_list"`

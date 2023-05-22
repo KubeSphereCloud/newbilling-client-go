@@ -27,11 +27,11 @@ type NewbillingCollectItem struct {
 
 	// collect time
 	// Format: date-time
-	CollectTime strfmt.DateTime `json:"collect_time,omitempty"`
+	CollectTime *strfmt.DateTime `json:"collect_time,omitempty"`
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// duration
 	Duration int32 `json:"duration,omitempty"`
@@ -44,7 +44,7 @@ type NewbillingCollectItem struct {
 
 	// next collect time
 	// Format: date-time
-	NextCollectTime strfmt.DateTime `json:"next_collect_time,omitempty"`
+	NextCollectTime *strfmt.DateTime `json:"next_collect_time,omitempty"`
 
 	// offset
 	Offset int32 `json:"offset,omitempty"`
@@ -60,7 +60,7 @@ type NewbillingCollectItem struct {
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling collect item

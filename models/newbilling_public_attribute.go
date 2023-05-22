@@ -24,7 +24,7 @@ type NewbillingPublicAttribute struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// description
 	Description string `json:"description,omitempty"`
@@ -40,7 +40,7 @@ type NewbillingPublicAttribute struct {
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 
 	// value type
 	ValueType string `json:"value_type,omitempty"`

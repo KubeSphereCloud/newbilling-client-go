@@ -24,7 +24,7 @@ type NewbillingRole struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 创建人ID
 	CreatedBy string `json:"created_by,omitempty"`
@@ -46,7 +46,7 @@ type NewbillingRole struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 
 	// 角色的成员数量
 	Users int64 `json:"users,omitempty"`

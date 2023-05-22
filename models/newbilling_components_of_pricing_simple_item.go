@@ -58,7 +58,7 @@ type NewbillingComponentsOfPricingSimpleItem struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling components of pricing simple item

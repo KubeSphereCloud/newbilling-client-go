@@ -43,11 +43,11 @@ type NewbillingSubscriptionComponentMini struct {
 
 	// expire time
 	// Format: date-time
-	ExpireTime strfmt.DateTime `json:"expire_time,omitempty"`
+	ExpireTime *strfmt.DateTime `json:"expire_time,omitempty"`
 
 	// start time
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// status
 	Status string `json:"status,omitempty"`

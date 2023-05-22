@@ -24,11 +24,11 @@ type NewbillingCollectDataUnit struct {
 
 	// 结束时间
 	// Format: date-time
-	EndTime strfmt.DateTime `json:"end_time,omitempty"`
+	EndTime *strfmt.DateTime `json:"end_time,omitempty"`
 
 	// 开始时间
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 }
 
 // Validate validates this newbilling collect data unit

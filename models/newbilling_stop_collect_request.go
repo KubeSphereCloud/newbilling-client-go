@@ -27,7 +27,7 @@ type NewbillingStopCollectRequest struct {
 
 	// 实例停止时间
 	// Format: date-time
-	StopTime strfmt.DateTime `json:"stop_time,omitempty"`
+	StopTime *strfmt.DateTime `json:"stop_time,omitempty"`
 }
 
 // Validate validates this newbilling stop collect request

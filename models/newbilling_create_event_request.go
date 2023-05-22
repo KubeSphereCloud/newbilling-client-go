@@ -30,7 +30,7 @@ type NewbillingCreateEventRequest struct {
 
 	// event time
 	// Format: date-time
-	EventTime strfmt.DateTime `json:"event_time,omitempty"`
+	EventTime *strfmt.DateTime `json:"event_time,omitempty"`
 
 	// passback
 	Passback string `json:"passback,omitempty"`

@@ -30,14 +30,14 @@ type NewbillingBillingJob struct {
 
 	// 计费任务创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 调度周期表达式
 	CronExpr string `json:"cron_expr,omitempty"`
 
 	// 计费任务结束时间
 	// Format: date-time
-	EndTime strfmt.DateTime `json:"end_time,omitempty"`
+	EndTime *strfmt.DateTime `json:"end_time,omitempty"`
 
 	// 计费方案ID
 	PlanID string `json:"plan_id,omitempty"`
@@ -50,7 +50,7 @@ type NewbillingBillingJob struct {
 
 	// 计费任务开始时间
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// 任务状态
 	Status string `json:"status,omitempty"`
@@ -60,7 +60,7 @@ type NewbillingBillingJob struct {
 
 	// 计费任务更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling billing job

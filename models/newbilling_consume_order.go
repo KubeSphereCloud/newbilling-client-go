@@ -30,7 +30,7 @@ type NewbillingConsumeOrder struct {
 
 	// charge time
 	// Format: date-time
-	ChargeTime strfmt.DateTime `json:"charge_time,omitempty"`
+	ChargeTime *strfmt.DateTime `json:"charge_time,omitempty"`
 
 	// consume type
 	ConsumeType string `json:"consume_type,omitempty"`
@@ -40,7 +40,7 @@ type NewbillingConsumeOrder struct {
 
 	// create time
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// is deleted
 	IsDeleted int32 `json:"is_deleted,omitempty"`
@@ -65,7 +65,7 @@ type NewbillingConsumeOrder struct {
 
 	// update time
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling consume order

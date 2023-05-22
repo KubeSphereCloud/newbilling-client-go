@@ -34,7 +34,7 @@ type NewbillingUser struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 货币种类
 	Currency string `json:"currency,omitempty"`
@@ -77,7 +77,7 @@ type NewbillingUser struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 
 	// 用户ID
 	UserID string `json:"user_id,omitempty"`

@@ -51,7 +51,7 @@ type NewbillingCustomer struct {
 
 	// 透支开始时间
 	// Format: date-time
-	OverdraftBeginTime strfmt.DateTime `json:"overdraft_begin_time,omitempty"`
+	OverdraftBeginTime *strfmt.DateTime `json:"overdraft_begin_time,omitempty"`
 
 	// 透支类型
 	OverdraftType string `json:"overdraft_type,omitempty"`

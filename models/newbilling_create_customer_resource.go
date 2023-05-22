@@ -33,14 +33,14 @@ type NewbillingCreateCustomerResource struct {
 
 	// expire time
 	// Format: date-time
-	ExpireTime strfmt.DateTime `json:"expire_time,omitempty"`
+	ExpireTime *strfmt.DateTime `json:"expire_time,omitempty"`
 
 	// resource pkg type
 	ResourcePkgType string `json:"resource_pkg_type,omitempty"`
 
 	// start time
 	// Format: date-time
-	StartTime strfmt.DateTime `json:"start_time,omitempty"`
+	StartTime *strfmt.DateTime `json:"start_time,omitempty"`
 
 	// subs component id
 	SubsComponentID string `json:"subs_component_id,omitempty"`

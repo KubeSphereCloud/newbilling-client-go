@@ -27,7 +27,7 @@ type NewbillingAttribute struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 属性描述
 	Description string `json:"description,omitempty"`
@@ -46,7 +46,7 @@ type NewbillingAttribute struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 
 	// value
 	Value string `json:"value,omitempty"`

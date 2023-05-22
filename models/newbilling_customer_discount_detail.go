@@ -25,7 +25,7 @@ type NewbillingCustomerDiscountDetail struct {
 
 	// 创建时间
 	// Format: date-time
-	CreateTime strfmt.DateTime `json:"create_time,omitempty"`
+	CreateTime *strfmt.DateTime `json:"create_time,omitempty"`
 
 	// 客户折扣描述
 	CustomerDiscountDesc string `json:"customer_discount_desc,omitempty"`
@@ -50,11 +50,11 @@ type NewbillingCustomerDiscountDetail struct {
 
 	// 客户折扣生效时间
 	// Format: date-time
-	EffectiveTime strfmt.DateTime `json:"effective_time,omitempty"`
+	EffectiveTime *strfmt.DateTime `json:"effective_time,omitempty"`
 
 	// 客户折扣失效时间
 	// Format: date-time
-	ExpirationTime strfmt.DateTime `json:"expiration_time,omitempty"`
+	ExpirationTime *strfmt.DateTime `json:"expiration_time,omitempty"`
 
 	// 折扣的产品信息组
 	FiltersMapList []*NewbillingDiscountFilerMap `json:"filters_map_list"`
@@ -64,7 +64,7 @@ type NewbillingCustomerDiscountDetail struct {
 
 	// 更新时间
 	// Format: date-time
-	UpdateTime strfmt.DateTime `json:"update_time,omitempty"`
+	UpdateTime *strfmt.DateTime `json:"update_time,omitempty"`
 }
 
 // Validate validates this newbilling customer discount detail
